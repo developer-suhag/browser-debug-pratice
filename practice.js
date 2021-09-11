@@ -18,4 +18,18 @@ setInterval(() => {
     interval()
 }, 1000); */
 
-// ------------------>> 4 <<-----------------------------
+// ------------------>> 9 <<-----------------------------
+
+const obj = {
+    name: 'Suhag',
+    age: '21',
+    codeEditor: 'VS Code',
+}
+
+const objJSON = JSON.stringify(obj);
+
+sessionStorage.setItem('user', objJSON)
+
+const getObj = sessionStorage.getItem('user');
+const objParse = JSON.parse(getObj)
+console.log(objParse);
