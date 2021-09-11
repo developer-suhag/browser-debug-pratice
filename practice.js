@@ -32,4 +32,16 @@ sessionStorage.setItem('user', objJSON)
 
 const getObj = sessionStorage.getItem('user');
 const objParse = JSON.parse(getObj)
-console.log(objParse);
+// console.log(objParse);
+
+
+// ------------------>> 12 <<-----------------------------
+
+const sum = (x, y) => {
+    const add = x + y;
+    const multipy = x * y;
+    return add + multipy;
+}
+
+const result = sum(5, 10)
+console.log(result);
